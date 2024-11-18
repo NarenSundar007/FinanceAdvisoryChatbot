@@ -170,7 +170,7 @@ with tab2:
 
     if st.button('Generate Tax Planning Advice'):
         prompt = (
-            f"So based on these given data generate me a tax planning advice, assuming I'm an Indian. "
+            f"So based on these given data generate me a tax planning advice, assuming I'm an Indian. Dont answer anything else other than questions related to finance and tax "
             f"Annual Income: {annual_income}, Income Sources: {', '.join(income_sources)}, "
             f"Deductions: Medical Expenses: {medical_expenses}, Mortgage Interest: {mortgage_interest}, "
             f"Charitable Contributions: {charitable_contributions}, Filing Status: {filing_status}, "
@@ -200,7 +200,7 @@ with tab3:
 
     if st.button('Generate Investment Advice'):
         prompt = (
-            f"So based on these given data generate me an investing advice, assuming I'm an Indian. "
+            f"So based on these given data generate me an investing advice, assuming I'm an Indian. Dont answer to anything else related to investment and finance "
             f"Risk Tolerance: {risk_tolerance}, Investment Horizon: {investment_horizon}, "
             f"Investment Goals: {', '.join(investment_goals)}, Initial Investment: {initial_investment}, "
             f"Monthly Contribution: {monthly_contribution}"
